@@ -26,9 +26,11 @@ while True:
         placar(ponto_usuario, ponto_oponente)
         if ponto_usuario<ponto_oponente:
             print("Poxa vida, não foi dessa vez. Tente novamente")
+            time.sleep(2000)
             sys.exit()
         else:
             print("Parabéns, voce brocou!")
+            time.sleep(2000)
             sys.exit()
             
     escolhaOponente = random.choice(list(escolhas.keys()))
